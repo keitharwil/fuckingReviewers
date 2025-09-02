@@ -203,9 +203,10 @@ h1{
   .sidebar a {font-size: 18px;}
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .lesson-content { font-size: 1rem; }
   .sub-title { font-size: 1.2rem; }
   .title { font-size: 1.5rem; }
-  #hero {font-size: 1.5rem;}
+  .openbtn { font-size: 15px; }
+  #hero {font-size: 1.5rem; margin: auto;}
 }

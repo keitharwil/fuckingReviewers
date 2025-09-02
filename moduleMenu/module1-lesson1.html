@@ -10,28 +10,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="styles/module1-style.css">
+    <script defer src="js/script.js"></script>
+    <title>Module 1</title>
 </head>
 <body>
     <div class="container">
         <div class="heroContainer"> 
-            <h1 id="hero">
-                Reviewers for CC2104
-            </h1>
+             <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button> 
+             </div> 
+             <h1 id="hero"> 
+                    Module 1
+                </h1>
         </div>
         <div class="content">
             <p id="welcome">
                 <span id="heart" class="material-symbols-outlined">favorite</span>
-                Welcome to the Reviewers Homepage!
-                <img id="cute-anime-girl" src="https://media1.tenor.com/m/WrOlPBLlU9wAAAAC/anime-rikka-finger-spin.gif" alt="cute anime girl circling">
+                Welcome to Module 1, Lesson 1!
             </p>
-            <ul>
-                <li><a href="moduleMenu/module1-lesson1.html">Module 1</a></li>
-                <li><a href="moduleMenu/module2-lesson1.html">Module 2</a></li>
-                <li><a href="moduleMenu/module3-lesson1.html">Module 3</a></li>
-                <li><a href="moduleMenu/module4-lesson1.html">Module 4</a></li>
-            </ul>
+        </div>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../index.html">Home</a>
+          <a href="module1-lesson1.html">Lesson 1</a>
+          <a href="#">Lesson 2</a>
+          <a href="#">Lesson 3</a>
+          <a href="#">Lesson 4</a>
         </div>
     </div>
 </body>

@@ -42,14 +42,14 @@ div.content {
     border-style: solid;
     width: 95dvw;
     height: max-content;
-    background-color: #1e2030;
+    background-color: #181926;
 }
 
 #hero {
   color: #7dc4e4;
   background-color: #181926;
   font-weight: 900;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lexend', sans-serif;
 }
 
 .material-symbols-outlined {
@@ -60,21 +60,65 @@ div.content {
   'opsz' 24
 }
 
+.lesson-content {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+
+}
+
+.next-lesson {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.next-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b7bdf8;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 5px;
+  font-size: 0.8rem;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.next-button a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #24273a;
+}
+
 #heart {
     vertical-align: middle;
     padding-bottom: 5px;
 }
 
-#welcome {
+.title {
     font-size: 2rem;
     margin: 0;
     padding: 0;
 }
 
+.sub-title {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.indented {
+    padding-left: 2rem;
+}
+
 #cute-anime-girl {
-    height: 6cqmin;
+    height: 50px;
     vertical-align: middle;
-    border-radius: 100%;
+    border-radius: 10%;
 }
 
 ul {
@@ -136,10 +180,11 @@ h1{
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: #24273a;
   color: white;
   padding: 10px 15px;
   border: none;
+  border-radius: 100%;
 }
 
 .openbtn:hover {

@@ -259,6 +259,6 @@ h1{
   .sub-title { font-size: 1.2rem; }
   .title { font-size: 1.5rem; }
   .openbtn { font-size: 15px; }
-  .prev-button { padding: 0.5px 0.5px; }
+  .prev-button { padding: 1px 1px; }
   #hero {font-size: 1.5rem; margin: auto;}
 }

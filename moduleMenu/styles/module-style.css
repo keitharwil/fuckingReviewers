@@ -115,6 +115,11 @@ div.content {
     padding-left: 2rem;
 }
 
+.indented-listItem {
+    list-style: inside;
+    list-style-type: "- ";
+}
+
 #cute-anime-girl {
     height: 50px;
     vertical-align: middle;

@@ -70,12 +70,13 @@ div.content {
 .next-lesson {
   margin-top: 1rem;
   margin-right: 1rem;
+  margin-left: 1rem;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
 }
 
-.next-button{
+.next-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,7 +89,20 @@ div.content {
   cursor: pointer;
 }
 
-.next-button a{
+.prev-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b7bdf8;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5px 0.5px;
+  font-size: 0.8rem;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.next-button, .prev-button a{
   text-decoration: none;
   font-weight: bold;
   color: #24273a;

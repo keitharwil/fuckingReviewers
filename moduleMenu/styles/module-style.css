@@ -251,16 +251,19 @@ h1{
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-
+/* Replace this section in your mobile media query */
 @media screen and (max-width: 600px) {
   .lesson-content { font-size: 1rem; }
-  .card-content { font-size: 1.2rem;   min-width: 80dvw; max-width: 100dvw; min-height: min-content;}
-  .menu-content { font-size: 1.2rem;   min-width: 50dvw; max-width: 100dvw; min-height: min-content;}
+  .card-content { font-size: 1.2rem; min-width: 80dvw; max-width: 100dvw; min-height: min-content;}
+  .menu-content { font-size: 1.2rem; min-width: 50dvw; max-width: 100dvw; min-height: min-content;}
   .sub-title { font-size: 1.2rem; }
   .title { font-size: 1.5rem; }
-  .prev-button {padding: 2px; }
-  .next-button {padding: 2.5px; }
-  .prev-button a{font-size: 15px;}
-  .next-button a{font-size: 15px;}
-  #hero {font-size: 1.5rem; margin: auto;}
+  
+  /* Fixed button padding for better mobile usability */
+  .prev-button { padding: 8px 12px; }
+  .next-button { padding: 8px 12px; }
+  .prev-button a { font-size: 14px; }
+  .next-button a { font-size: 14px; }
+  
+  #hero { font-size: 1.5rem; margin: auto; }
 }

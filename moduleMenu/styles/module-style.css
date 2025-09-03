@@ -155,6 +155,10 @@ div.content {
     padding: 0;
 }
 
+.sub-title{
+  font-weight: 600;
+}
+
 .indented {
     padding-left: 2rem;
 }

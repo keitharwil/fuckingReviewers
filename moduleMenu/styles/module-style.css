@@ -160,7 +160,7 @@ div.content {
 }
 
 .indented-listItem {
-    list-style: inside;
+    margin-left: 1rem;
     list-style-type: "- ";
 }
 

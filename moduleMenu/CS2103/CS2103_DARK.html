@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Communication and Networks</title>
-    <!-- Use Tailwind CSS for a modern, responsive layout -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Use the Inter font from Google Fonts for a clean, professional look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/module-style.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            color: #E0E0E0; /* Light gray text for dark mode */
+            color: #E0E0E0;
         }
         table {
             border-collapse: collapse;
@@ -24,25 +23,83 @@
             text-align: left;
         }
         th {
-            background-color: #3B82F6; /* Adjusted blue for dark mode */
+            background-color: #3B82F6;
             color: white;
             font-weight: bold;
         }
         tr:nth-child(even) {
-            background-color: #2C2C2C; /* Darker background for alternating rows */
+            background-color: #2C2C2C;
         }
         tr:hover {
-            background-color: #3D3D3D; /* Slightly lighter hover effect */
+            background-color: #3D3D3D;
         }
         strong {
-            color: #93C5FD; /* Lighter blue for strong tags */
+            color: #93C5FD;
+        }
+        /* Top bar styles */
+        .heroContainer {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #181926;
+            border-bottom: 5px solid #7dc4e4;
+            z-index: 100;
+            height: 70px;
+            padding: 0 2rem;
+        }
+        #hero {
+            color: #7dc4e4;
+            background-color: #181926;
+            font-weight: 900;
+            font-family: 'Lexend', sans-serif;
+            font-size: 2rem;
+        }
+        .home-link {
+            color: #7dc4e4;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2rem;
+            background: #24273a;
+            padding: 8px 18px;
+            border-radius: 20px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .home-link:hover {
+            background: #7dc4e4;
+            color: #181926;
+        }
+        @media screen and (max-width: 600px) {
+            .heroContainer {
+                padding: 0 0.5rem;
+                height: 60px;
+            }
+            #hero {
+                font-size: 1.2rem;
+            }
+            .home-link {
+                font-size: 1rem;
+                padding: 6px 12px;
+            }
         }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200 p-4 sm:p-8">
 
-    <div class="max-w-4xl mx-auto bg-gray-800 p-6 sm:p-10 rounded-xl shadow-lg">
+    <!-- Top Bar Start -->
+    <div class="heroContainer">
+        <h1 id="hero">
+            Data Communication and Networks
+        </h1>
+        <a href="../../index.html" class="home-link">Home</a>
+    </div>
+    <!-- Top Bar End -->
 
+    <div class="max-w-4xl mx-auto bg-gray-800 p-6 sm:p-10 rounded-xl shadow-lg" style="margin-top:6rem;">
+       
         <!-- Main Title -->
         <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-blue-400">Module 1: OVERVIEW OF DATA COMMUNICATION AND COMPUTER NETWORKING</h1>
 
@@ -399,56 +456,6 @@
             <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
                 <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">2. Using Cable Networks</h4>
                 <ul class="list-disc list-inside ml-4">
-                    <li class="mb-1"><strong>Ethernet:</strong> This is what most of us use to connect devices in our homes and offices. An Ethernet cable is a networking cable that plugs into a device and provides a direct, reliable connection to a network.</li>
-                    <li class="mb-1"><strong>Fiber Optics:</strong> This is the fastest type of physical connection. Fiber optic cables are made of tiny, hair-thin strands of glass that transmit data using pulses of light.</li>
-                </ul>
-            </div>
-
-            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
-                <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">3. Using Unguided Mediums (Wireless)</h4>
-                <p class="mb-4">
-                    Wireless networks use an <strong>unguided medium</strong> to send data. That means they transport electromagnetic waves through the air, without a physical conductor.
-                </p>
-                <ul class="list-disc list-inside ml-4">
-                    <li class="mb-1"><strong>Wi-Fi:</strong> This is the most common wireless technology you use every day. Wi-Fi uses radio waves to provide high-speed Internet and network connections to devices like your phone and laptop. Your device connects to a **wireless access point (WAP)**, which is the hub of your wireless network.</li>
-                </ul>
-                <h5 class="font-bold text-gray-400 mb-2 mt-4">How Unguided Signals Travel:</h5>
-                <ul class="list-disc list-inside ml-4">
-                    <li><strong>Ground Propagation:</strong> Radio waves travel close to the ground, hugging the Earth's surface.</li>
-                    <li><strong>Sky Propagation:</strong> Higher-frequency waves are sent up to the ionosphere and reflected back down to Earth, covering long distances.</li>
-                    <li><strong>Line-of-Sight Propagation:</strong> This is a direct, straight-line transmission from one antenna to another. This requires the antennas to be facing each other.</li>
-                </ul>
-            </div>
-
-            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">Physical Media</h3>
-            <p class="mb-4">
-                <strong>Physical media</strong> are the tangible materials used to transmit or store data in a network, such as copper and glass. There are three main types of wired transmission media.
-            </p>
-
-            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
-                <h4 class="text-lg font-bold text-gray-400 mb-2">1. Twisted Pair Copper Wire</h4>
-                <p class="mb-4">
-                    This type of cabling consists of pairs of insulated copper wires twisted together. This twisting helps reduce electromagnetic interference. It is commonly used in telephone and Ethernet networks.
-                </p>
-                <ul class="list-disc list-inside ml-4">
-                    <li><strong>Unshielded Twisted Pair (UTP):</strong> This is the most common type. It lacks a metallic shield, making it the least expensive. UTP cables are classified into different categories based on their performance, with <strong>Category 6</strong> being the fastest standard for UTP. It has a maximum speed of <strong>1000 Mbps</strong> and a maximum length of <strong>100 meters</strong>.</li>
-                    <li><strong>Shielded Twisted Pair (STP):</strong> This cable includes a metal foil or braided-mesh covering around the twisted pairs, which provides additional protection from interference. STP is moderately more expensive than UTP. It also has a maximum speed of <strong>1000 Mbps</strong> and a maximum length of <strong>100 meters</strong>.</li>
-                </ul>
-            </div>
-
-            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
-                <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">2. Coaxial Cable</h4>
-                <p class="mb-4">
-                    <strong>Coaxial cable</strong>, or coax, consists of a central copper conductor surrounded by an insulator, a metallic shield, and an outer jacket. The shield helps reduce outside interference. It carries signals at higher frequencies than twisted-pair cable.
-                </p>
-                <ul class="list-disc list-inside ml-4">
-                    <li><strong>Speed and Throughput:</strong> 10 to <strong>100 Mbps</strong></li>
-                    <li><strong>Average Cost:</strong> Inexpensive</li>
-                    <li><strong>Maximum Length:</strong> <strong>500 meters</strong></li>
-                    <li><strong>Common Uses:</strong> Cable television and internet providers.</li>
-                </ul>
-            </div>
-
             <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
                 <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">3. Fiber Optics</h4>
                 <p class="mb-4">

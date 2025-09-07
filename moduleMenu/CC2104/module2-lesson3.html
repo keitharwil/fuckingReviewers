@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/module-style.css">
+    <script defer src="../js/script.js"></script>
+    <title>Module 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heroContainer"> 
+             <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button> 
+             </div> 
+             <h1 id="hero"> 
+                    Module 2 - Lesson 3
+                </h1>
+        </div>
+        <div class="content">
+            <p class="title">
+                <span id="heart" class="material-symbols-outlined">favorite</span>
+                Challenges and Trends in Data Management
+                <img id="cute-anime-girl" src="https://i.kym-cdn.com/photos/images/newsfeed/001/439/781/a03.gif" alt="cute anime girl circling">
+            </p>
+            <div class="lesson-content"> 
+                <p class="sub-title">> Data Management Risks and Challenges</p>
+                <ul class="indented">
+                    <li><b>Managing large amounts of data:</b> Handling growing volumes and different types of data makes integration, quality, and governance harder.</li>
+                    <li><b>Breaking down data silos:</b> Poor architecture leads to isolated systems, making data less consistent and harder to manage.</li>
+                    <li><b>Integrating diverse data sets and platforms:</b> Combining various data types and sources, especially across cloud and on-premises, is complex.</li>
+                    <li><b>Ensuring user access to data:</b> Making data easy to find and access is challenging; data catalogs help by documenting available data.</li>
+                    <li><b>Moving data to the cloud:</b> Cloud migration can simplify some tasks but introduces new challenges like migration complexity and cost management.</li>
+                </ul>
+                <br>
+                <p class="sub-title">> Data Management Trends</p>
+                <ul class="indented">
+                    <li><b>Cloud data management is growing:</b> Cloud DBMS and modern data stacks drive innovation and make integration easier; hybrid cloud is an option for gradual migration.</li>
+                    <li><b>Augmented data management:</b> AI and machine learning automate tasks, improve quality, and help manage costs (FinOps).</li>
+                    <li><b>Generative AI impact:</b> GenAI tools help automate data management tasks and create new opportunities, but also introduce new data types and require vector databases for unstructured data.</li>
+                    <li><b>Edge computing growth:</b> More organizations use sensors and IoT devices for real-time analytics at the edge, requiring new data management and governance processes outside traditional cloud/on-premises centers.</li>
+                </ul>
+            </div>
+        <div class="next-lesson">
+            <button class="prev-button"><a href="module2-lesson2.html" class="prev-button">Previous Lesson</a></button>
+        </div>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../../index.html">Home</a>
+            <a href="module2-lesson1.html">Lesson 1</a>
+            <a href="module2-lesson2.html">Lesson 2</a>
+            <a href="module2-lesson3.html">Lesson 3</a>
+        </div>
+    </div>
+</body>
+</html>

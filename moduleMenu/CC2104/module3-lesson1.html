@@ -11,21 +11,124 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/module-style.css">
-    <title>Welcome</title>
+    <script defer src="../js/script.js"></script>
+    <title>Module 3 - Lesson 1</title>
 </head>
 <body>
     <div class="container">
         <div class="heroContainer"> 
-            <h1 id="hero">
-                Reviewers
-            </h1>
+             <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button> 
+             </div> 
+             <h1 id="hero"> 
+                    Module 3 - Lesson 1
+                </h1>
         </div>
         <div class="content">
-           <p id="welcome">
+            <p class="title">
                 <span id="heart" class="material-symbols-outlined">favorite</span>
-                HINDI PA NAGAGAWA LAYAS
-                <img id="cute-anime-girl" src="https://media1.tenor.com/m/WrOlPBLlU9wAAAAC/anime-rikka-finger-spin.gif" alt="cute anime girl circling">
+                Computer-based Information System’s Elements and Evolution
+                <img id="cute-anime-girl" src="https://i.kym-cdn.com/photos/images/newsfeed/001/439/781/a03.gif" alt="cute anime girl circling">
             </p>
+            <div class="lesson-content"> 
+                <p class="sub-title">CBIS Elements</p>
+                <ul class="indented">
+                    <li>
+                        <b>Hardware</b>
+                        <ul>
+                            <li>The term hardware refers to machinery.</li>
+                            <li>Among the support equipment’s are input and output devices, storage devices and communications devices.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Software</b>
+                        <ul>
+                            <li>The term software refers to computer programs and the manuals (if any) that support them.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Data</b>
+                        <ul>
+                            <li>Data are facts that are used by program to produce useful information.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Procedures</b>
+                        <ul>
+                            <li>Procedures are the policies that govern the operation of a computer system.</li>
+                            <li>“Procedures are to people what software is to hardware”</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>People</b>
+                        <ul>
+                            <li>Every Computer Based Information System (CBIS) needs people if it is to be useful.</li>
+                            <li>Most over-looked element of the CBIS is the people.</li>
+                            <li>Most influence the success or failure of information system.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="sub-title">&gt; The Evolution and Role of Information Systems</p>
+                <p>The role of IS has expanded beyond traditional business functions to play a critical part in different areas.</p>
+                <ul class="indented">
+                    <li>
+                        <b>The Mainframe Era</b>
+                        <ul>
+                            <li>From the late 1950s through the 1960s, computers were seen as a way to more efficiently do calculations.</li>
+                            <li>Computers were room-sized monsters, with several refrigerator-sized machines linked together.</li>
+                            <li>Only large businesses, universities, and government agencies could afford them.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>The PC Revolution</b>
+                        <ul>
+                            <li>In 1975, the first microcomputer was announced on the cover of Popular Mechanics: the Altair 8800.</li>
+                            <li>The most prominent of these early personal computer makers was Apple Computer, headed by Steve Jobs and Steve Wozniak, with the hugely successful “Apple II.”</li>
+                            <li>In 1981 IBM (teaming with Microsoft for their operating-system software) released their own version of the personal computer, simply called the “PC.”</li>
+                            <li>The IBM PC was named Time magazine’s “Man of the Year” for 1982.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Client-Server</b>
+                        <ul>
+                            <li>In the mid-1980s, businesses began to see the need to connect their computers together as a way to collaborate and share resources.</li>
+                            <li>This networking architecture was referred to as “client-server” because users would log in to the local area network (LAN) from their PC (the “client”) by connecting to a powerful computer called a “server”.</li>
+                            <li>Software companies began developing applications that allowed multiple users to access the same data at the same time.</li>
+                            <li>This evolved into software applications for communicating, with the first real popular use of electronic mail appearing at this time.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>The World Wide Web and E-Commerce</b>
+                        <ul>
+                            <li>In 1989, Tim Berners-Lee developed a simpler way for researchers to share information over the network at CERN laboratories, a concept he called the World Wide Web.</li>
+                            <li>As web browsers and Internet connections became the norm, companies rushed to grab domain names and create websites.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Web 2.0</b>
+                        <ul>
+                            <li>Websites became interactive; instead of just visiting a site to find out about a business and purchase its products, customers wanted to be able to customize their experience and interact with the business.</li>
+                            <li>Web 2.0 is exemplified by blogging, social networking, and interactive comments being available on many websites.</li>
+                            <li>This process of technology replacing a middleman in a transaction is called disintermediation.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>The Post-PC World</b>
+                        <ul>
+                            <li>After thirty years as the primary computing device used in most businesses, sales of the PC are now beginning to decline as sales of tablets and smartphones are taking off.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="next-lesson">
+                <button class="next-button"><a href="module2-lesson2.html" class="next-button">Next Lesson</a></button>
+            </div>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../../index.html">Home</a>
+            <a href="module2-lesson1.html">Lesson 1</a>
+            <a href="module2-lesson2.html">Lesson 2</a>
         </div>
     </div>
 </body>

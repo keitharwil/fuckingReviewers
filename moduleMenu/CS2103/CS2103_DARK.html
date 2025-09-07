@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Communication and Networks</title>
+    <!-- Use Tailwind CSS for a modern, responsive layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use the Inter font from Google Fonts for a clean, professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #E0E0E0; /* Light gray text for dark mode */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+        }
+        th {
+            background-color: #3B82F6; /* Adjusted blue for dark mode */
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #2C2C2C; /* Darker background for alternating rows */
+        }
+        tr:hover {
+            background-color: #3D3D3D; /* Slightly lighter hover effect */
+        }
+        strong {
+            color: #93C5FD; /* Lighter blue for strong tags */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-gray-800 p-6 sm:p-10 rounded-xl shadow-lg">
+
+        <!-- Main Title -->
+        <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-blue-400">Module 1: OVERVIEW OF DATA COMMUNICATION AND COMPUTER NETWORKING</h1>
+
+        <!-- Lesson 1 -->
+        <div class="lesson mb-8">
+            <h2 class="text-2xl font-bold text-blue-300 mb-4">Lesson 1: Data Communication</h2>
+            <p class="mb-4">
+                <strong>Data Communication</strong> – The exchange of data between two devices via a transmission medium. For data communication to occur, devices must be part of a <strong>communication system</strong> made up of <strong>hardware</strong> (physical components) and <strong>software</strong>.
+            </p>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-4 mt-6">History of Data Communication (Timeline)</h3>
+            <div class="overflow-x-auto rounded-lg shadow-lg">
+                <table class="w-full">
+                    <thead>
+                        <tr>
+                            <th class="rounded-tl-lg">Year</th>
+                            <th class="rounded-tr-lg">Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1940</strong></td>
+                            <td><strong>Small Step for Man, Great Leap for Communications</strong> – George Stibitz sent computing commands over a teletype machine from Dartmouth College to his Complex Number Calculator in New York, marking a leap in networking technology.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1943</strong></td>
+                            <td><strong>Teletype Computation</strong> – Stibitz’s work led to loop-based teleprinters and automated telegraphs. <strong>IBM</strong> adapted this to transmit punched cards at 25 bps.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1948</strong></td>
+                            <td><strong>Teletype Modems to SAGE</strong> – Telephone systems using teletype communication modems transmitted multiple images to <strong>SAGE computers</strong>, increasing data transfer but reducing speed at the receiving end.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1958</strong></td>
+                            <td><strong>AT&T Digital Subset</strong> – Boosted speed to 110 bps through <strong>AT&T computer modems</strong> called <strong>Digital Subsets</strong>, linking SAGE computers across the U.S. and Canada.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1962</strong></td>
+                            <td><strong>Bell 103 Data Phone</strong> – First civilian commercial computer modem; allowed digital data transmission over standard telephone lines, though very expensive.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1962</strong></td>
+                            <td><strong>Intergalactic Computer Network</strong> – J. C. R. Licklider (ARPA) proposed linking computers worldwide, enabling data and program sharing.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1965</strong></td>
+                            <td><strong>Wide Area Network (WAN)</strong> – Thomas Marill and Lawrence Roberts created the first WAN, a precursor to <strong>ARPANET</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1977</strong></td>
+                            <td><strong>Hayes 80-130A</strong> – First <strong>personal computer modem</strong> by Dennis Hayes and Dale Heatherington, allowed PC users to connect directly to phone lines.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1981</strong></td>
+                            <td><strong>Hayes Smartmodem</strong> – Improved modem offering 300 bps, enabled auto-dialing, hanging up, and initializing. Later improved to 1200 bps.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mid-1980s</strong></td>
+                            <td><strong>Fast Lane Modems</strong> – <strong>IBM PC clones</strong> led to Industry Standard Architecture (ISA) and PCI modem cards. This era marked the rise of <strong>Broadband Services</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1989</strong></td>
+                            <td><strong>World Wide Web</strong> – Tim Berners-Lee proposed an information management system, becoming the foundation of today’s <strong>World Wide Web</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mid-1990s</strong></td>
+                            <td><strong>Lower Costs, Faster Speeds</strong> – Broadband entered homes, <strong>PCI modems</strong> became standard in PCs/laptops, and global internet access expanded.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1996</strong></td>
+                            <td><strong>The 56K Modem</strong> – Brent Townshend created the <strong>56K modem</strong> with speeds of 56 kbps, doubling previous modems’ power. <strong>LANs</strong> became popular in businesses.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Early 2000s</strong></td>
+                            <td><strong>ISDN, ADSL, and Cable</strong> – Analog phased out in favor of <strong>ISDN</strong> (digital phone lines), <strong>ADSL</strong> (faster speeds over copper lines), and <strong>cable TV modems</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2002</strong></td>
+                            <td><strong>Arrival of 3G</strong> – <strong>Third-generation (3G) wireless</strong> enabled mobile internet, video calling, and mobile TV. Required 200 kbps peak speeds.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mid-2000s</strong></td>
+                            <td><strong>Wireless Age Matures</strong> – Broadband and <strong>wireless networks</strong> became mainstream; devices like early iPhones and tablets popularized wireless connectivity.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2009</strong></td>
+                            <td><strong>4G/LTE</strong> – Introduced peak speeds of 100 Mbps (high mobility) and 1 Gbps (low mobility), supporting large file sizes and advanced services.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">3 Fundamentals of data communication</h3>
+            <ul class="list-decimal list-inside ml-4">
+                <li class="mb-1"><strong>DELIVERY</strong>. The system must deliver data to the correct destination. </li>
+                <li class="mb-1"><strong>ACCURACY</strong>. The system must deliver data accurately.</li>
+                <li class="mb-1"><strong>TIMELINESS</strong>. The system must deliver data in a timely manner. </li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">Data Communication Concept</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li class="mb-1"><strong>SENDER.</strong> The one who transmits message. </li>
+                <li class="mb-1"><strong>RECEIVER.</strong> The one who receives the message </li>
+                <li class="mb-1"><strong>MESSAGE.</strong> The data sent by the sender </li>
+                <li class="mb-1"><strong>MEDIUM.</strong> The material used where the message travels.</li>
+                <li class="mb-1"><strong>PROTOCOL.</strong> The set of rules that allow electronic devices to communicate with each other</li>
+            </ul>
+        </div>
+
+        <hr class="my-8 border-gray-600">
+
+        <!-- Lesson 2 -->
+        <div class="lesson mb-8">
+            <h2 class="text-2xl font-bold text-blue-300 mb-4">Lesson 2. Data Representation</h2>
+            <p class="mb-4">
+                <strong>Data</strong>-refers to the symbols that represent people,events,things and ideas. Data can be a name, a number, the colors in a photograph, or the notes in musical operation. <strong>Data representation</strong> refers to the form in which data is stored, processed, and transmitted.
+            </p>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2">Data can be one of the following:</h3>
+            <ul class="list-decimal list-inside ml-4">
+                <li class="mb-4"><strong>Text</strong> – Represented as a <strong>bit pattern</strong>, which is a sequence of bits.
+                    <ul class="list-disc list-inside ml-4 mt-2">
+                        <li class="mb-1"><strong>Code</strong> – A set of bit patterns designed to represent text symbols.</li>
+                        <li class="mb-1"><strong>Coding</strong> – The process of representing symbols using codes.</li>
+                        <li class="mb-1"><strong>Unicode</strong> – A modern coding system that uses 32 bits to represent a symbol or character from any language in the world.</li>
+                        <li class="mb-1"><strong>ASCII</strong> (American Standard Code for Information Interchange) – The first 127 characters of Unicode, also known as Basic Latin.</li>
+                    </ul>
+                </li>
+                <li class="mb-4"><strong>Numbers</strong> – Represented by bit patterns, directly converted to binary numbers to simplify mathematical operations.</li>
+                <li class="mb-4"><strong>Images</strong> – Represented by bit patterns and composed of a matrix of <strong>pixels</strong>, where each pixel is a small dot.</li>
+                <li class="mb-4"><strong>Audio</strong> – Refers to the recording or broadcasting of sound or music. Unlike text, numbers, or images, audio is continuous, not discrete.</li>
+                <li class="mb-4"><strong>Video</strong> – Refers to the recording or broadcasting of a picture or a movie. It can exist as a continuous entity or as a combination of images.</li>
+            </ul>
+        </div>
+
+        <hr class="my-8 border-gray-600">
+
+        <!-- Lesson 3 -->
+        <div class="lesson mb-8">
+            <h2 class="text-2xl font-bold text-blue-300 mb-4">Lesson 3. What is a Computer Network?</h2>
+            <p class="mb-4">
+                A <strong>computer network</strong> is an interconnection of various computer systems located at different places.
+            </p>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2">Properties of a Network</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li class="mb-1">Facilitate communications </li>
+                <li class="mb-1">Permit sharing of files, data, and other types of information </li>
+                <li class="mb-1">Share network and computing resources</li>
+            </ul>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">Benefits of Network</h3>
+            <ul class="list-disc list-inside ml-4">
+                <li class="mb-1">✔ <strong>File Sharing</strong></li>
+                <li class="mb-1">✔ <strong>Printer/Peripheral Sharing</strong> </li>
+                <li class="mb-1">✔ <strong>Internet Connection Sharing</strong> </li>
+                <li class="mb-1">✔ <strong>Multi-player Games</strong> </li>
+                <li class="mb-1">✔ <strong>Home Entertainment</strong></li>
+            </ul>
+        </div>
+
+        <hr class="my-8 border-gray-600">
+
+        <!-- Module 3 -->
+        <div class="module mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-blue-400">Module 3: TYPES OF THE COMPUTER NETWORK AND THE INTERNET</h1>
+            
+            <p class="mb-4">
+                A <strong>network</strong> connects two or more computers to share resources (like printers), exchange files, and communicate electronically. They can be linked using various methods, including cables, radio waves, or infrared signals.
+            </p>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">Types of Computer Networks</h3>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">1. Personal Area Network (PAN)</h3>
+                <p class="mb-4">
+                    A <strong>PAN</strong> is the smallest and most personal type of network. It connects devices within a very close range, typically up to <strong>10 meters</strong>.
+                </p>
+                <p class="font-semibold text-gray-300">Examples:</p>
+                <ul class="list-disc list-inside ml-4">
+                    <li>Bluetooth-enabled devices like wireless headphones, keyboards, and mice connecting to a smartphone or computer.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">2. Local Area Network (LAN)</h3>
+                <p class="mb-4">
+                    A <strong>LAN</strong> connects hosts within a single, limited area such as an office, building, or campus. It can be wired, wireless, or a combination of both.
+                </p>
+                <p class="font-semibold text-gray-300">Key purpose:</p>
+                <ul class="list-disc list-inside ml-4">
+                    <li>Sharing resources like printers, file servers, and internet access among users.</li>
+                </ul>
+                <p class="font-semibold text-gray-300 mt-4">Components:</p>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Workstations:</strong> Computers used by a person to interact with the network, such as desktops, laptops, and tablets.</li>
+                    <li><strong>Servers:</strong> More powerful computers that provide services to the network and are often located in a secure area. They can operate without a display or keyboard.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">3. Wireless Local Area Network (WLAN)</h3>
+                <p class="mb-4">
+                    A <strong>WLAN</strong> is a wireless network that links two or more devices to form a LAN within a limited area. All devices that can connect to this network are called **stations**. Stations are divided into two main categories:
+                </p>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Wireless Access Points (WAPs):</strong> These are the base stations that transmit and receive radio frequencies. They act as a central hub for wireless communication.</li>
+                    <li><strong>Wireless Clients:</strong> These are the devices that connect to the network, such as laptops, smartphones, and printers equipped with a wireless network interface.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">4. Metropolitan Area Network (MAN)</h3>
+                <p class="mb-4">
+                    A <strong>MAN</strong> is a network that covers a large geographical area, typically an entire city. It's essentially a network formed by connecting multiple LANs. A MAN is larger than a LAN but smaller than a WAN.
+                </p>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">5. Wide Area Network (WAN)</h3>
+                <p class="mb-4">
+                    A <strong>WAN</strong> covers a very large geographical area, such as provinces or even a whole country. It's used to connect different LANs and MANs. Telecommunication networks are prime examples of WANs.
+                </p>
+                <p class="font-semibold text-gray-300">Types of WANs:</p>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Point-to-Point WAN:</strong> This type of network connects only two communicating devices directly.</li>
+                    <li><strong>Switched WAN:</strong> This is a more complex network that connects more than two ends. It's the backbone of global communication, consisting of several point-to-point WANs linked by switches.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h3 class="text-xl font-bold text-blue-400 mb-2">6. Internetwork</h3>
+                <p class="mb-4">
+                    An <strong>internetwork</strong> (with a lowercase 'i') is created when two or more separate networks are connected to each other. This is the foundational concept for the global **Internet**.
+                </p>
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">The Internet and Its History</h3>
+            <p class="mb-4">
+                The <strong>Internet</strong> is the largest network on Earth, a "network of networks" that connects thousands of individual networks, including WANs, LANs, and home networks. It is a vast system with a hierarchical structure.
+            </p>
+
+            <h4 class="text-lg font-bold text-gray-400 mb-2">Internet Structure</h4>
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <ul class="list-decimal list-inside ml-4">
+                    <li class="mb-1"><strong>Backbones:</strong> At the top level, these are large, high-speed networks owned by major telecommunication companies (e.g., AT&T, Verizon). They are also known as international <strong>ISPs</strong>.</li>
+                    <li class="mb-1"><strong>Provider Networks:</strong> These smaller networks use the backbones' services for a fee and are connected to backbones or other provider networks. They are often called national or regional <strong>ISPs</strong>.</li>
+                    <li class="mb-1"><strong>Customer Networks:</strong> These are the end-user networks at the edge of the Internet, such as those in homes and businesses, that use the services provided.</li>
+                </ul>
+            </div>
+            
+            <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">Internet History Timeline</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- 1961 -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">1961</span>
+                    <p class="text-sm">The concept of <strong class="text-blue-300">packet switching</strong> was introduced by Leonard Kleinrock. This method breaks data into small packets for transmission.</p>
+                </div>
+                <!-- 1967 -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">1967</span>
+                    <p class="text-sm">ARPA presented the idea for <strong class="text-blue-300">ARPANET</strong>, a network that connected computers via specialized computers called IMPs.</p>
+                </div>
+                <!-- 1969 -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">1969</span>
+                    <p class="text-sm">ARPANET became a reality, connecting the first four nodes at U.S. universities.</p>
+                </div>
+                <!-- 1977 -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">1977</span>
+                    <p class="text-sm">An early internetwork successfully connected three different networks.</p>
+                </div>
+                <!-- 1981 -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">1981</span>
+                    <p class="text-sm">The <strong class="text-blue-300">CSNET</strong> (Computer Science Network) was created to broaden network access.</p>
+                </div>
+                <!-- 1983 -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">1983</span>
+                    <p class="text-sm"><strong class="text-blue-300">TCP/IP</strong> became the official protocol for ARPANET, which was then split into MILNET and a non-military ARPANET.</p>
+                </div>
+                <!-- 1986 -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">1986</span>
+                    <p class="text-sm">NSFNET, a new backbone sponsored by the National Science Foundation, connected five supercomputer centers.</p>
+                </div>
+                <!-- 1992 -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">1992</span>
+                    <p class="text-sm">ANSNET was built, creating a new high-speed Internet backbone.</p>
+                </div>
+                <!-- The Web -->
+                <div class="bg-gray-700 p-4 rounded-xl shadow-md border border-gray-600 flex flex-col justify-start items-center text-center">
+                    <span class="text-4xl font-bold text-blue-400 mb-2">The Web</span>
+                    <p class="text-sm">Tim Berners-Lee invented the <strong class="text-blue-300">World Wide Web</strong>, which added commercial and public applications and fundamentally changed how we use the Internet.</p>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">ACRONYMS</h3>
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>PAN:</strong> Personal Area Network</li>
+                    <li><strong>LAN:</strong> Local Area Network</li>
+                    <li><strong>WLAN:</strong> Wireless Local Area Network</li>
+                    <li><strong>MAN:</strong> Metropolitan Area Network</li>
+                    <li><strong>WAN:</strong> Wide Area Network</li>
+                    <li><strong>WAP:</strong> Wireless Access Point</li>
+                    <li><strong>ARPA:</strong> Advanced Research Project Agency</li>
+                    <li><strong>ACM:</strong> Association for Computing Machinery</li>
+                    <li><strong>IMP:</strong> Interface Message Processor</li>
+                    <li><strong>NCP:</strong> Network Control Protocol</li>
+                    <li><strong>ISP:</strong> Internet Service Provider</li>
+                    <li><strong>MILNET:</strong> Military Network</li>
+                    <li><strong>CSNET:</strong> Computer Science Network</li>
+                    <li><strong>NSFNET:</strong> National Science Foundation Network</li>
+                    <li><strong>ANSNET:</strong> Advanced Network & Services Network</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="my-8 border-gray-600">
+
+        <!-- Module 4 -->
+        <div class="module">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-blue-400">Module 4: DATA FLOW, ACCESS NETWORKS AND PHYSICAL MEDIA</h1>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2">Data Flow</h3>
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <p class="mb-4">
+                    <strong>Data flow</strong> is the direction data travels between two devices. It's classified into three types:
+                </p>
+                <ul class="list-disc list-inside ml-4">
+                    <li class="mb-1"><strong>Simplex:</strong> Data moves in only one direction. One device can only transmit, while the other can only receive. Think of a one-way street or a radio broadcast. The entire channel capacity is used for that single direction.</li>
+                    <li class="mb-1"><strong>Half-Duplex:</strong> Both devices can transmit and receive, but not at the same time. A good analogy is a walkie-talkie, where one person speaks while the other listens. The channel's full capacity is used for one-directional data at any given moment.</li>
+                    <li class="mb-1"><strong>Full-Duplex:</strong> Both devices can transmit and receive simultaneously. This is like a two-way street or a standard phone call where both people can talk at once. The channel's capacity is shared to allow for simultaneous two-way communication.</li>
+                </ul>
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">Accessing the Network</h3>
+            <p class="mb-4">
+                To access the Internet, users must physically connect to an <strong>Internet Service Provider (ISP)</strong>. This connection is typically a point-to-point WAN.
+            </p>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h4 class="text-lg font-bold text-gray-400 mb-2">1. Using Telephone Networks</h4>
+                <ul class="list-disc list-inside ml-4">
+                    <li class="mb-1"><strong>Dial-Up Service:</strong> This is the original way to connect. Your computer uses a modem to "dial" a phone number to your ISP. While you're online, your phone line is busy, so you can't make or receive calls.</li>
+                    <li class="mb-1"><strong>DSL (Digital Subscriber Line):</strong> This is a much better option. DSL lets you use your phone line for both voice calls and Internet access at the same time.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">2. Using Cable Networks</h4>
+                <ul class="list-disc list-inside ml-4">
+                    <li class="mb-1"><strong>Ethernet:</strong> This is what most of us use to connect devices in our homes and offices. An Ethernet cable is a networking cable that plugs into a device and provides a direct, reliable connection to a network.</li>
+                    <li class="mb-1"><strong>Fiber Optics:</strong> This is the fastest type of physical connection. Fiber optic cables are made of tiny, hair-thin strands of glass that transmit data using pulses of light.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">3. Using Unguided Mediums (Wireless)</h4>
+                <p class="mb-4">
+                    Wireless networks use an <strong>unguided medium</strong> to send data. That means they transport electromagnetic waves through the air, without a physical conductor.
+                </p>
+                <ul class="list-disc list-inside ml-4">
+                    <li class="mb-1"><strong>Wi-Fi:</strong> This is the most common wireless technology you use every day. Wi-Fi uses radio waves to provide high-speed Internet and network connections to devices like your phone and laptop. Your device connects to a **wireless access point (WAP)**, which is the hub of your wireless network.</li>
+                </ul>
+                <h5 class="font-bold text-gray-400 mb-2 mt-4">How Unguided Signals Travel:</h5>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Ground Propagation:</strong> Radio waves travel close to the ground, hugging the Earth's surface.</li>
+                    <li><strong>Sky Propagation:</strong> Higher-frequency waves are sent up to the ionosphere and reflected back down to Earth, covering long distances.</li>
+                    <li><strong>Line-of-Sight Propagation:</strong> This is a direct, straight-line transmission from one antenna to another. This requires the antennas to be facing each other.</li>
+                </ul>
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-400 mb-2 mt-6">Physical Media</h3>
+            <p class="mb-4">
+                <strong>Physical media</strong> are the tangible materials used to transmit or store data in a network, such as copper and glass. There are three main types of wired transmission media.
+            </p>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h4 class="text-lg font-bold text-gray-400 mb-2">1. Twisted Pair Copper Wire</h4>
+                <p class="mb-4">
+                    This type of cabling consists of pairs of insulated copper wires twisted together. This twisting helps reduce electromagnetic interference. It is commonly used in telephone and Ethernet networks.
+                </p>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Unshielded Twisted Pair (UTP):</strong> This is the most common type. It lacks a metallic shield, making it the least expensive. UTP cables are classified into different categories based on their performance, with <strong>Category 6</strong> being the fastest standard for UTP. It has a maximum speed of <strong>1000 Mbps</strong> and a maximum length of <strong>100 meters</strong>.</li>
+                    <li><strong>Shielded Twisted Pair (STP):</strong> This cable includes a metal foil or braided-mesh covering around the twisted pairs, which provides additional protection from interference. STP is moderately more expensive than UTP. It also has a maximum speed of <strong>1000 Mbps</strong> and a maximum length of <strong>100 meters</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">2. Coaxial Cable</h4>
+                <p class="mb-4">
+                    <strong>Coaxial cable</strong>, or coax, consists of a central copper conductor surrounded by an insulator, a metallic shield, and an outer jacket. The shield helps reduce outside interference. It carries signals at higher frequencies than twisted-pair cable.
+                </p>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Speed and Throughput:</strong> 10 to <strong>100 Mbps</strong></li>
+                    <li><strong>Average Cost:</strong> Inexpensive</li>
+                    <li><strong>Maximum Length:</strong> <strong>500 meters</strong></li>
+                    <li><strong>Common Uses:</strong> Cable television and internet providers.</li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md mb-6 border border-gray-600">
+                <h4 class="text-lg font-bold text-gray-400 mb-2 mt-4">3. Fiber Optics</h4>
+                <p class="mb-4">
+                    <strong>Fiber-optic cable</strong> is made of fine strands of glass or plastic that transmit data as pulses of light. This medium offers the highest performance for data transmission over long distances.
+                </p>
+                <ul class="list-disc list-inside ml-4">
+                    <li><strong>Speed and Throughput:</strong> <strong>10 Mbps</strong> to <strong>100 Gbps</strong> (Gigabits per second)</li>
+                    <li><strong>Average Cost:</strong> Expensive</li>
+                    <li><strong>Maximum Length:</strong> <strong>1000 meters</strong></li>
+                    <li><strong>Common Uses:</strong> High-speed internet, cable television, and telephone networks.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

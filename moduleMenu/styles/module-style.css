@@ -168,6 +168,134 @@ div.content {
     list-style-type: "- ";
 }
 
+.evolution-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #181926;
+    border-radius: 2rem;
+    padding: 20px;
+    border: 3px solid #b7bdf8;
+}
+.title {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #7dc4e4;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 20px;
+}
+.era-card {
+    background-color: #363a4f;
+    border-radius: 1rem;
+    padding: 20px;
+    border: 2px solid #7dc4e4;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.era-header {
+    background-color: #7dc4e4;
+    color: #24273a;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.tech-name {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #b7bdf8;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #cdd6f4;
+}
+.contributions {
+    background-color: #494d64;
+    padding: 12px;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+}
+.contributions-title {
+    font-weight: 600;
+    color: #a6e3a1;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+.limitations {
+    background-color: #494d64;
+    padding: 12px;
+    border-radius: 0.5rem;
+}
+.limitations-title {
+    font-weight: 600;
+    color: #f38ba8;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+.content-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+.page-number {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #7dc4e4;
+    font-family: 'Lexend', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .evolution-container {
+        padding: 15px;
+        margin: 10px;
+        border-radius: 1rem;
+    }
+    
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .era-card {
+        padding: 15px;
+    }
+    
+    .tech-name {
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 1.3rem;
+    }
+    
+    .era-header {
+        font-size: 1rem;
+    }
+    
+    .tech-name {
+        font-size: 1rem;
+    }
+}
+
 #cute-anime-girl {
     height: 50px;
     vertical-align: middle;
@@ -215,10 +343,6 @@ h1{
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {

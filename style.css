@@ -17,6 +17,7 @@ div.container {
     align-items: center;
     width: 100dvw;
     height: 100dvh;
+    overflow-x: hidden;
     max-width:100%;
 }
 

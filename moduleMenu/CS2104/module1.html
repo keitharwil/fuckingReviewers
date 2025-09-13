@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/module-style.css">
+    <script defer src="../js/script.js"></script>
+    <title>Module 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heroContainer"> 
+             <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button> 
+             </div> 
+             <h1 id="hero"> 
+                    Module 1    
+                </h1>
+        </div>
+        <div class="content">
+            <p class="title">
+                <span id="heart" class="material-symbols-outlined">favorite</span>
+                Welcome to Module 1! 
+                <img id="cute-anime-girl" src="https://media1.tenor.com/m/WrOlPBLlU9wAAAAC/anime-rikka-finger-spin.gif" alt="cute anime girl circling">
+            </p>
+            <div class="lesson-content">
+                <p class="sub-title">> An Introduction to Data Science</p>
+                <ul class="indented">
+                    <li>
+                        Over the last decade, data science has grown into one of the most important fields in both research and industry. This rise is largely due to the explosion of data, improvements in technology, and the growing need to make sense of information to support real-world decisions.
+                    </li>
+                </ul>
+                <p class="sub-title">> What is Data Science?</p>
+                <ul class="indented">
+                    <li>
+                        Data science is the domain of study that uses modern tools and techniques to deal with vast volumes of data. Its goal is to find unseen patterns, derive meaningful information, and inform business decisions.
+                    </li>
+                    <li>
+                        As Investopedia.com emphasizes, data science extracts value from big data, which is continually increasing due to advancements in technology and collection techniques. This allows for monitoring consumer behavior and making predictions based on gathered information.
+                    </li>
+                </ul>
+                <p class="sub-title">> The Treasure Trove of Data</p>
+                <ul class="indented">
+                    <li><b>Untapped Potential:</b> Vast amounts of data are collected but often remain unused, waiting to be transformed into actionable insights.</li>
+                    <li><b>Revealing Trends:</b> Data science reveals hidden trends and produces insights that lead to better decision-making.</li>
+                    <li><b>Fostering Innovation:</b> It enables the creation of more innovative products and services by leveraging data-driven discoveries.</li>
+                </ul>
+                <p class="sub-title">> Data Science: A Blend of Disciplines</p>
+                <ul class="indented">
+                    <li><b>Artificial Intelligence (AI):</b> Mimics human behavior; a wide-ranging branch of computer science concerned with building smart machines capable of performing tasks that typically require human intelligence.</li>
+                    <li><b>Machine Learning (ML):</b> A subset of AI, these are techniques that enable computers to learn from data and deliver AI applications. Essential for predictive models.</li>
+                    <li><b>Statistics:</b> Fundamental to understanding data, creating models, and analyzing results. It is deeply rooted within data science.</li>
+                    <li><b>Scientific Methods:</b> A systematic approach to inquiry, including hypothesis testing and data validation, crucial for robust analysis.</li>
+                    <li><b>Data Analysis:</b> The process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information.</li>
+                </ul>
+            </div>
+            <div class="evolution-container">
+                <div class="title">A Brief History of Data Science</div>
+                <div class="cards-grid">
+                    <div class="era-card">
+                        <div class="era-header">1962: Data Analysis</div>
+                        <div class="description">John Tukey wrote about the shift in statistics, emphasizing "data analysis" as a central interest, merging statistics with computers.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="era-header">1974: "Data Science" Coined</div>
+                        <div class="description">Peter Naur used the term "Data Science" repeatedly in his book, Concise Survey of Computer Methods.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="era-header">1977: IASC Formation</div>
+                        <div class="description">The International Association for Statistical Computing (IASC) was formed, linking statistical methodology, computer technology, and domain knowledge.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="era-header">1994: Database Marketing</div>
+                        <div class="description">Business Week's cover story highlighted companies gathering personal information for targeted campaigns, marking the rise of big data.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="era-header">2008: "Data Scientist" Buzzword</div>
+                        <div class="description">The title "Data Scientist" gained traction, popularized by DJ Patil and Jeff Hammerbacher from LinkedIn and Facebook.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="era-header">2011: Job Boom</div>
+                        <div class="description">Job listings for Data Scientists increased by 15,000%, solidifying its role in corporate culture.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson-content">
+                <p class="sub-title">> The Data Science Lifecycle</p>
+                <ul class="indented">
+                    <li><b>Capture:</b> Data acquisition, entry, signal reception, and extraction. This involves gathering raw structured and unstructured data from various sources.</li>
+                    <li><b>Maintain:</b> Data warehousing, cleansing, staging, processing, and architecture. Raw data is prepared and put into a usable format, ensuring quality and consistency.</li>
+                    <li><b>Process:</b> Data mining, clustering/classification, modeling, and summarization. Data scientists examine patterns, ranges, and biases to prepare for predictive analysis.</li>
+                    <li><b>Analyze:</b> Exploratory/confirmatory, predictive analysis, regression, text mining, and qualitative analysis. This is where various analytical techniques are applied to the processed data.</li>
+                    <li><b>Communicate:</b> Data reporting, visualization, business intelligence, and decision-making. Analysts present findings in easily understandable formats like charts and reports.</li>
+                </ul>
+            </div>
+
+            <div class="evolution-container">
+                <div class="title">Prerequisites for Data Science</div>
+                <div class="cards-grid">
+                    <div class="era-card">
+                        <div class="tech-name">Machine Learning</div>
+                        <div class="description">The backbone of data science, requiring a solid grasp of ML algorithms and statistical knowledge.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Modeling</div>
+                        <div class="description">Identifying the most suitable algorithms and training models to make quick calculations and predictions.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Statistics</div>
+                        <div class="description">Core to extracting intelligence and obtaining meaningful results from data.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Programming</div>
+                        <div class="description">Essential for executing data science projects, with Python and R being popular choices.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Databases</div>
+                        <div class="description">Understanding how databases work, how to manage them, and how to extract data.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Data Manipulation & Analysis</div>
+                        <div class="description">Cleaning and converting unstructured data into an analysis-ready format.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Data Visualization</div>
+                        <div class="description">Crucial for sharing insights and making data-driven findings understandable to stakeholders.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evolution-container">
+                <div class="title">Applications of Data Science: Real-World Impact</div>
+                <div class="cards-grid">
+                    <div class="era-card">
+                        <div class="tech-name">Airline Industry</div>
+                        <div class="description">Predicting travel disruptions, optimizing routes, forecasting delays, and offering personalized promotions.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Retail & E-commerce</div>
+                        <div class="description">Understanding customer buying patterns, creating targeted recommendations, and optimizing inventory.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Logistics</div>
+                        <div class="description">Improving delivery speeds and reducing costs by analyzing traffic, weather, and other factors.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Financial Services</div>
+                        <div class="description">Detecting fraud by recognizing suspicious behaviors and anomalous actions in transactions.</div>
+                    </div>
+                    <div class="era-card">
+                        <div class="tech-name">Healthcare</div>
+                        <div class="description">Improving patient diagnoses by analyzing medical test data and reported symptoms for earlier, more effective treatment.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-lesson">
+                <button class="next-button"><a href="module1-lesson2.html" class="next-button">Next Lesson</a></button>
+            </div>
+        </div>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../../index.html">Home</a>
+            <a href="module1.html">Module 1</a>
+            <a href="module2.html">Module 2</a>
+            <a href="module3.html">Module 3</a>
+            <a href="module4.html">Module 4</a>
+            <a href="module5.html">Module 5</a>
+        </div>
+    </div>
+</body>
+</html>

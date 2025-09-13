@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/module-style.css">
+    <script defer src="../js/script.js"></script>
+    <title>Module 3 - CS2104</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heroContainer"> 
+             <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button> 
+             </div> 
+             <h1 id="hero"> 
+                    Module 3 - CS2104
+                </h1>
+        </div>
+        <div class="content">
+    <p class="title">
+        <span id="heart" class="material-symbols-outlined">favorite</span>
+        The Typical Data Science Process
+        <img id="cute-anime-girl" src="https://media1.tenor.com/m/WrOlPBLlU9wAAAAC/anime-rikka-finger-spin.gif" alt="cute anime girl circling">
+    </p>
+
+    <div class="lesson-content">
+        <p class="sub-title">Overview</p>
+        <ul class="indented">
+            <li>This module provides an overview of the typical data science process, from setting a research goal to presenting your findings.</li>
+        </ul>
+    </div>
+
+    <div class="evolution-container">
+        <div class="title">Step 1: Defining Research Goals</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Key Outcomes</div>
+                <div class="description">
+                    <ul>
+                        <li>Clear research goal</li>
+                        <li>Good understanding of the context</li>
+                        <li>Well-defined deliverables</li>
+                        <li>Action plan with timetable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="evolution-container">
+        <div class="title">Step 2: Retrieving Data</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Internal Data</div>
+                <div class="description">Most companies have existing data collected and stored.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">External Data</div>
+                <div class="description">Data can often be purchased from third-party data brokers or retrieved from publicly available, high-quality sources.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Data Collection</div>
+                <div class="description">Sometimes, designing a new data collection process might be necessary, though less common for early-career roles.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="evolution-container">
+        <div class="title">Step 3: Cleansing, Integrating & Transforming Data</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Data Cleansing</div>
+                <div class="description">Detecting and correcting errors, inconsistencies, and missing values.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Data Integration</div>
+                <div class="description">Combining data from various disparate sources into a unified dataset.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Data Transformation</div>
+                <div class="description">Converting data into formats suitable for analysis and modeling (e.g., normalization, aggregation).</div>
+            </div>
+        </div>
+        <div class="contributions">
+            <div class="contributions-title">Tip</div>
+            <div class="content-text">"Garbage in equals garbage out." The quality of your data directly impacts the performance of your models and the reliability of your insights. Thorough preparation is paramount.</div>
+        </div>
+    </div>
+
+    <div class="evolution-container">
+        <div class="title">Step 4: Exploratory Data Analysis (EDA)</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Visual Techniques</div>
+                <div class="description">Primarily use graphical methods (charts, plots, dashboards) to make information easier to grasp.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Descriptive Statistics</div>
+                <div class="description">Calculate summaries like mean, median, standard deviation, and correlations.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Pattern Recognition</div>
+                <div class="description">Look for trends, relationships between variables, and anomalies.</div>
+            </div>
+        </div>
+        <div class="limitations">
+            <div class="limitations-title">Note</div>
+            <div class="content-text">While the goal isn't cleansing, it's common to discover new anomalies during EDA that might require revisiting prior data preparation steps. Keep an open mind!</div>
+        </div>
+    </div>
+
+    <div class="evolution-container">
+        <div class="title">Step 5: Building the Models</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Predictive Models</div>
+                <div class="description">Forecasting future outcomes (e.g., sales, stock prices).</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Classification Models</div>
+                <div class="description">Categorizing data into predefined classes (e.g., spam detection).</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Insight Models</div>
+                <div class="description">Understanding underlying relationships within the data.</div>
+            </div>
+        </div>
+        <div class="contributions">
+            <div class="contributions-title">Tip</div>
+            <div class="content-text">Sometimes a combination of simpler models outperforms a single complex one.</div>
+        </div>
+    </div>
+
+    <div class="evolution-container">
+        <div class="title">Step 6: Presenting Findings & Building Applications</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Communicate Impact</div>
+                <div class="description">Clearly articulate how your findings will change business processes or improve decision-making.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Influencer Role</div>
+                <div class="description">Convince stakeholders of the validity and value of your analysis.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Automation</div>
+                <div class="description">For recurring processes, automate the analysis to save time and ensure consistency.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="next-lesson">
+        <button class="next-button"><a href="module1.html" class="next-button">Previous Module</a></button>
+        <button class="next-button"><a href="module3.html" class="next-button">Next Module</a></button>
+    </div>
+</div>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../../index.html">Home</a>
+            <a href="module1.html">Module 1</a>
+            <a href="module2.html">Module 2</a>
+            <a href="module3.html">Module 3</a>
+            <a href="module4.html">Module 4</a>
+            <a href="module5.html">Module 5</a>
+        </div>
+    </div>
+</body>
+</html>

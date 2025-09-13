@@ -170,7 +170,7 @@ div.content {
 
 .evolution-container {
     max-width: 1200px;
-    margin: 0 auto;
+    align-self: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: #181926;

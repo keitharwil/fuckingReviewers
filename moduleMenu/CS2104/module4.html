@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/module-style.css">
+    <script defer src="../js/script.js"></script>
+    <title>Module 4 - CS2104</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heroContainer"> 
+             <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button> 
+             </div> 
+             <h1 id="hero"> 
+                    Module 4 - CS2104
+                </h1>
+        </div>
+        <div class="content">
+    <p class="title">
+        <span id="heart" class="material-symbols-outlined">favorite</span>
+        What is Machine Learning?
+        <img id="cute-anime-girl" src="https://media1.tenor.com/m/WrOlPBLlU9wAAAAC/anime-rikka-finger-spin.gif" alt="cute anime girl circling">
+    </p>
+
+    <div class="lesson-content">
+        <p class="sub-title">Introduction</p>
+        <ul class="indented">
+            <li>Machine Learning (ML) empowers computer systems to learn from hidden correlations within data, enabling them to automate processes and solve complex real-world problems. Unlike traditional software, ML applications can learn from dynamic environments and adapt to changing requirements, scaling lessons across multiple applications.</li>
+            <li>This evolution allows for automated decision-making and more innovative solutions, making ML a natural and essential technological investment today.</li>
+        </ul>
+    </div>
+
+    <div class="lesson-content">
+        <p class="sub-title">How Does a Computer Learn?</p>
+        <ul class="indented">
+            <li>At its core, machine learning involves "programming by example." Experts develop general-purpose algorithms that, when fed specific data, can solve particular tasks. The computer processes this data, compares its output to a desired outcome, and self-corrects.</li>
+            <li>Just like humans, the more "experience" (data) a computer receives, the better it becomes at its designated job. This iterative process of ingestion, comparison, and correction is fundamental to how ML systems achieve intelligence.</li>
+        </ul>
+        <ul class="indented">
+            <li><b>Ingestion:</b> The system takes in raw data.</li>
+            <li><b>Comparison:</b> The system compares its predicted output to the expected or correct output.</li>
+            <li><b>Correction:</b> If the output is wrong, the system adjusts its internal rules/parameters to get closer to the correct answer next time.</li>
+        </ul>
+    </div>
+
+    <div class="evolution-container">
+        <div class="title">Core Applications in Data Science</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Resource Discovery</div>
+                <div class="description">Finding oil fields, gold mines, or archaeological sites based on existing data (classification and regression).</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Information Extraction</div>
+                <div class="description">Identifying place names or persons in text, or recognizing birds by whistle (classification).</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Predictive Maintenance</div>
+                <div class="description">Proactively identifying car parts likely to fail (regression) to prevent costly breakdowns.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Healthcare Diagnostics</div>
+                <div class="description">Identifying tumors and diseases from medical images or data (classification).</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Customer Behavior</div>
+                <div class="description">Predicting profitable customers or the amount of money a person will spend on a product (regression and classification).</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lesson-content">
+        <p class="sub-title">ML Throughout the Data Science Process</p>
+        <ul class="indented">
+            <li><b>Data Cleansing:</b> ML can group similar text strings to streamline spelling error correction.</li>
+            <li><b>Data Exploration:</b> Algorithms can uncover underlying patterns in data that are difficult to find with traditional charts alone.</li>
+            <li>Given its utility, Python's rich ecosystem of ML libraries simplifies the entire data science workflow.</li>
+        </ul>
+    </div>
+
+    <div class="evolution-container">
+        <div class="title">The Modeling Process: Four Steps to Building an ML Model</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Feature Engineering & Model Selection</div>
+                <div class="description">Transforming raw data into features that best represent the problem and choosing the right algorithm.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Training the Model</div>
+                <div class="description">Feeding the prepared data to the chosen algorithm to enable it to learn patterns and relationships.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Model Validation & Selection</div>
+                <div class="description">Evaluating the model's performance on unseen data and selecting the best performing model.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Applying to Unseen Data</div>
+                <div class="description">Deploying the validated model to make predictions or decisions on new, real-world data.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lesson-content">
+        <p class="sub-title">Lesson 2: Types of Machine Learning</p>
+    </div>
+    <div class="evolution-container">
+        <div class="title">Supervised Learning</div>
+        <div class="description">Supervised learning is a machine learning technique applied to labeled data. The model learns by comparing its predictions to known labels, adjusting its internal parameters to improve accuracy.</div>
+    </div>
+    <div class="evolution-container">
+        <div class="title">Unsupervised Learning</div>
+        <div class="description">Unlike supervised learning, unsupervised learning tackles unlabeled data. This approach is crucial for discovery when explicit guidance isn't available.</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Study Data Distribution</div>
+                <div class="description">Infer truths about the data by analyzing its inherent patterns and structures.</div>
+            </div>
+            <div class="era-card">
+                <div class="tech-name">Derive New Meaning</div>
+                <div class="description">Extract new, more meaningful data and structures from raw information, often through techniques like clustering or dimensionality reduction.</div>
+            </div>
+        </div>
+    </div>
+    <div class="evolution-container">
+        <div class="title">Semi-Supervised Learning</div>
+        <div class="description">Semi-supervised learning bridges the gap by leveraging a small amount of labeled data alongside a large amount of unlabeled data. This hybrid approach uses unsupervised techniques to analyze unlabeled data, then propagates labels to similar data points, reducing the need for extensive manual labeling.</div>
+        <div class="cards-grid">
+            <div class="era-card">
+                <div class="tech-name">Goal</div>
+                <div class="description">Train powerful predictive models with minimal labeled data.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lesson-content">
+        <p class="sub-title">Key Takeaways & Next Steps</p>
+        <ul class="indented">
+            <li><b>ML Fundamentals:</b> Machine Learning enables systems to learn from data, adapting to dynamic environments for intelligent automation.</li>
+            <li><b>Versatile Applications:</b> From healthcare diagnostics to predictive maintenance, ML is vital across industries and data science workflows.</li>
+            <li><b>Learning Paradigms:</b> Supervised, Unsupervised, and Semi-Supervised learning offer distinct approaches based on data availability.</li>
+        </ul>
+    </div>
+    <div class="next-lesson">
+        <button class="next-button"><a href="module3.html" class="next-button">Previous Module</a></button>
+    </div>
+</div>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../../index.html">Home</a>
+            <a href="module1.html">Module 1</a>
+            <a href="module2.html">Module 2</a>
+            <a href="module3.html">Module 3</a>
+            <a href="module4.html">Module 4</a>
+        </div>
+    </div>
+</body>
+</html>
